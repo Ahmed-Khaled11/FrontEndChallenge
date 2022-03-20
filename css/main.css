@@ -11,7 +11,7 @@ body{
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     background-color: var(--section-color);
-    height: 4000px;
+   
 }
 /* container  */
 .container{
