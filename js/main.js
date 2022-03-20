@@ -6,9 +6,7 @@ let stats = document.querySelectorAll(".stats");
 let weeklyScroll = document.querySelector(".weekly-scroll");
 let container = document.querySelector(".container");
 // function to add class remove to the Element
-console.log("SDa");
 document.body.addEventListener("click", function () {
-    console.log("Ssadssda");
     
 })
 let allEle = [...textEle]
@@ -39,4 +37,3 @@ weekly.addEventListener("click", function () {
                 });
 })
 });
-
