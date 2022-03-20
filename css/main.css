@@ -1,0 +1,153 @@
+:root{
+    --section-color:#0f1322;
+    --main-color:#1b1e48;
+}
+*{
+    margin:0;
+    padding: 0;
+    behavior: "smooth";
+}
+body{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--section-color);
+    height: 4000px;
+}
+/* container  */
+.container{
+    margin-right: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+/* start myInfo  */
+.challenge .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px , 1fr));
+    gap: 20px;
+
+}
+.challenge .box{
+    background-color: var(--main-color);
+
+}
+.challenge .myInfo{
+    color: white;
+    border-radius: 12px;
+    max-height: 476px;
+    padding-bottom: 30px;
+    margin-top: 0;
+}
+.challenge .myInfo .img{
+    padding: 20px;
+    background-color:#563be3 ;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.challenge .myInfo .img img{
+    width: 70px;
+    max-width:100%;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.challenge .myInfo .info{
+    padding: 20px;
+    background-color: #563be3;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.challenge .myInfo .info span{
+    display: inline-block;
+    font-size: 12px;
+    color: #eeec;
+}
+.challenge .myInfo .text span{
+    transition: 0.3s;
+}
+.challenge .myInfo .text span:hover{
+    color: white !important;
+}
+.challenge .myInfo .info p{
+    font-size: 32px;
+    width: 120px;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.challenge .myInfo .text{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 12px;
+}
+.challenge .myInfo .text span{
+    color: #4d53a7;
+    font-weight: bold;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.challenge .myInfo .text .active{
+    color: white;
+}
+/* end myInfo  */
+/* start stats box  */
+.stats{
+        height: 60vh;
+    overflow-y: scroll;
+    /* scroll-behavior: smooth; */
+
+}
+    .box{
+        position: relative;
+        background-color: var(--main-color);
+        color: white;
+        border-radius: 12px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        
+    }
+    .stats::-webkit-scrollbar {
+    width: 0px;
+}
+    .stats .box:nth-child(2)::before,
+    .stats .box:nth-child(4)::before{
+        background-color: #53e282;
+    }
+    .stats .box::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 20px;
+        background-color: #f38467;
+        top: -10px;
+        border-top-right-radius:12px ;
+        border-top-left-radius:12px ;
+        z-index: -1;
+    }
+    .stats .box .content{
+        padding: 20px;
+        border-radius: 12px;
+        padding-bottom: 20px;
+    }
+    .stats .box .status{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    }
+    .stats .box .status p{
+        font-weight: bold;
+    }
+    .stats .box .status span{
+        cursor: pointer;
+    }
+    .stats .box .hours p{
+        font-size: 45px;
+        margin-top:20px ;
+        margin-bottom:20px;
+    }
+    .stats .box .hours span{
+        color: #fff;
+    }
+/* end stats box  */
